@@ -1,25 +1,141 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="SKQ-jQ-1am">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Barcode Scanner-->
+        <scene sceneID="Xbj-2d-XvI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BoC-Zs-Med" customClass="BarcodeReaderViewController" customModule="RecordScanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="5pU-Ko-cl8"/>
+                        <viewControllerLayoutGuide type="bottom" id="QJ0-bX-JdM"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="4BO-MM-Ag4">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Barcode Scanner" id="H9m-ZL-k2F"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="euJ-Mz-P1c" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="868" y="326"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="54O-la-YW1">
+            <objects>
+                <navigationController id="SKQ-jQ-1am" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SDa-ZF-Rxv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0h0-Qv-XES" kind="relationship" relationship="rootViewController" id="2dy-bL-Db8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBP-1I-iVe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-604" y="326"/>
+        </scene>
+        <!--Album Details-->
+        <scene sceneID="UDs-DC-X0E">
+            <objects>
+                <viewController id="0h0-Qv-XES" customClass="AlbumDetailsViewController" customModule="RecordScanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IIy-P9-DBG"/>
+                        <viewControllerLayoutGuide type="bottom" id="MUN-3N-F2x"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AnY-Gq-WaM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Album - Artist" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjT-tz-2G0">
+                                <rect key="frame" x="20" y="83" width="560" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="Bm8-3v-Ozg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Record Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZDE-xa-gNF">
+                                <rect key="frame" x="20" y="166" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="q5e-51-2yv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Year" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kzN-8l-kUM">
+                                <rect key="frame" x="20" y="195" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="PA9-Z3-L12"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Format" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-6e-OYb">
+                                <rect key="frame" x="20" y="224" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Tzh-Pu-tBc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dGE-Mp-kFc">
+                                <rect key="frame" x="20" y="253" width="560" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="ora-Ms-hcY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YwH-6e-OYb" firstAttribute="top" secondItem="kzN-8l-kUM" secondAttribute="bottom" constant="8" id="4Qt-B4-SBl"/>
+                            <constraint firstItem="kzN-8l-kUM" firstAttribute="trailing" secondItem="AnY-Gq-WaM" secondAttribute="trailingMargin" id="Erw-d1-Utf"/>
+                            <constraint firstItem="VjT-tz-2G0" firstAttribute="top" secondItem="IIy-P9-DBG" secondAttribute="bottom" constant="19" id="H3M-ZP-h0u"/>
+                            <constraint firstItem="kzN-8l-kUM" firstAttribute="leading" secondItem="AnY-Gq-WaM" secondAttribute="leadingMargin" id="IvX-K7-7MF"/>
+                            <constraint firstItem="dGE-Mp-kFc" firstAttribute="trailing" secondItem="AnY-Gq-WaM" secondAttribute="trailingMargin" id="L6Z-k4-4M0"/>
+                            <constraint firstItem="YwH-6e-OYb" firstAttribute="leading" secondItem="AnY-Gq-WaM" secondAttribute="leadingMargin" id="TLJ-G8-IZ6"/>
+                            <constraint firstItem="dGE-Mp-kFc" firstAttribute="top" secondItem="YwH-6e-OYb" secondAttribute="bottom" constant="8" id="Xvr-pl-I8y"/>
+                            <constraint firstItem="ZDE-xa-gNF" firstAttribute="leading" secondItem="AnY-Gq-WaM" secondAttribute="leadingMargin" id="koq-qD-abV"/>
+                            <constraint firstItem="kzN-8l-kUM" firstAttribute="top" secondItem="ZDE-xa-gNF" secondAttribute="bottom" constant="8" id="lVw-mL-MVm"/>
+                            <constraint firstItem="VjT-tz-2G0" firstAttribute="leading" secondItem="AnY-Gq-WaM" secondAttribute="leadingMargin" id="mCT-dc-Yp7"/>
+                            <constraint firstItem="dGE-Mp-kFc" firstAttribute="leading" secondItem="AnY-Gq-WaM" secondAttribute="leadingMargin" id="nqw-FV-DeW"/>
+                            <constraint firstItem="ZDE-xa-gNF" firstAttribute="trailing" secondItem="AnY-Gq-WaM" secondAttribute="trailingMargin" id="pmF-vM-UbH"/>
+                            <constraint firstItem="ZDE-xa-gNF" firstAttribute="top" secondItem="VjT-tz-2G0" secondAttribute="bottom" constant="8" id="s3E-pJ-kYg"/>
+                            <constraint firstItem="VjT-tz-2G0" firstAttribute="trailing" secondItem="AnY-Gq-WaM" secondAttribute="trailingMargin" id="xlH-53-nGV"/>
+                            <constraint firstItem="YwH-6e-OYb" firstAttribute="trailing" secondItem="AnY-Gq-WaM" secondAttribute="trailingMargin" id="zxs-by-Rqf"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Album Details" id="34V-Dn-pv5">
+                        <barButtonItem key="rightBarButtonItem" title="Scan" id="F9H-tg-rLT">
+                            <connections>
+                                <segue destination="BoC-Zs-Med" kind="show" id="15N-fr-3J8"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="albumCountry" destination="dGE-Mp-kFc" id="JX1-zO-HDG"/>
+                        <outlet property="albumFormat" destination="YwH-6e-OYb" id="NK8-uX-xAS"/>
+                        <outlet property="albumLabel" destination="ZDE-xa-gNF" id="Tzp-NS-Z8Z"/>
+                        <outlet property="artistAlbumLabel" destination="VjT-tz-2G0" id="9v0-G4-Hqf"/>
+                        <outlet property="yearLabel" destination="kzN-8l-kUM" id="IBq-mK-8Su"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3uD-wA-dW3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="93" y="326"/>
         </scene>
     </scenes>
 </document>

@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		BB9AAF281D9241C30071D1F2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF271D9241C30071D1F2 /* AppDelegate.swift */; };
-		BB9AAF2A1D9241C30071D1F2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF291D9241C30071D1F2 /* ViewController.swift */; };
 		BB9AAF2D1D9241C50071D1F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9AAF2B1D9241C50071D1F2 /* Main.storyboard */; };
 		BB9AAF2F1D9241C60071D1F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB9AAF2E1D9241C60071D1F2 /* Assets.xcassets */; };
 		BB9AAF321D9241C70071D1F2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB9AAF301D9241C70071D1F2 /* LaunchScreen.storyboard */; };
 		BB9AAF3D1D9241CB0071D1F2 /* RecordScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF3C1D9241CB0071D1F2 /* RecordScannerTests.swift */; };
+		BB9AAF481D9245AB0071D1F2 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF471D9245AA0071D1F2 /* Album.swift */; };
+		BB9AAF4A1D9245F40071D1F2 /* AlbumDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF491D9245F40071D1F2 /* AlbumDetailsViewController.swift */; };
+		BB9AAF4C1D9246660071D1F2 /* BarcodeScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF4B1D9246660071D1F2 /* BarcodeScannerViewController.swift */; };
+		BB9AAF4E1D92469C0071D1F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF4D1D92469C0071D1F2 /* Constants.swift */; };
+		BB9AAF501D92473E0071D1F2 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9AAF4F1D92473E0071D1F2 /* DataService.swift */; };
+		FBB0E1551A0328EB7FD53311 /* Pods_RecordScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F1C48DD41FB466C98F806CE /* Pods_RecordScanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,9 +31,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F1C48DD41FB466C98F806CE /* Pods_RecordScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RecordScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D4FD52868912FA3156394B2 /* Pods-RecordScanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordScanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RecordScanner/Pods-RecordScanner.debug.xcconfig"; sourceTree = "<group>"; };
+		B67CBE70CEEB984A36ACA45D /* Pods-RecordScanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RecordScanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-RecordScanner/Pods-RecordScanner.release.xcconfig"; sourceTree = "<group>"; };
 		BB9AAF241D9241C30071D1F2 /* RecordScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecordScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9AAF271D9241C30071D1F2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BB9AAF291D9241C30071D1F2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BB9AAF2C1D9241C50071D1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BB9AAF2E1D9241C60071D1F2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB9AAF311D9241C70071D1F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +43,11 @@
 		BB9AAF381D9241CB0071D1F2 /* RecordScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecordScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB9AAF3C1D9241CB0071D1F2 /* RecordScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordScannerTests.swift; sourceTree = "<group>"; };
 		BB9AAF3E1D9241CB0071D1F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB9AAF471D9245AA0071D1F2 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
+		BB9AAF491D9245F40071D1F2 /* AlbumDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumDetailsViewController.swift; sourceTree = "<group>"; };
+		BB9AAF4B1D9246660071D1F2 /* BarcodeScannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarcodeScannerViewController.swift; sourceTree = "<group>"; };
+		BB9AAF4D1D92469C0071D1F2 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BB9AAF4F1D92473E0071D1F2 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB0E1551A0328EB7FD53311 /* Pods_RecordScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46AFCD3564F1AE4FB983B1D6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D4FD52868912FA3156394B2 /* Pods-RecordScanner.debug.xcconfig */,
+				B67CBE70CEEB984A36ACA45D /* Pods-RecordScanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4C6ECEE4149A8012C8140F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F1C48DD41FB466C98F806CE /* Pods_RecordScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BB9AAF1B1D9241C20071D1F2 = {
 			isa = PBXGroup;
 			children = (
 				BB9AAF261D9241C30071D1F2 /* RecordScanner */,
 				BB9AAF3B1D9241CB0071D1F2 /* RecordScannerTests */,
 				BB9AAF251D9241C30071D1F2 /* Products */,
+				46AFCD3564F1AE4FB983B1D6 /* Pods */,
+				4C6ECEE4149A8012C8140F13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +110,11 @@
 			isa = PBXGroup;
 			children = (
 				BB9AAF271D9241C30071D1F2 /* AppDelegate.swift */,
-				BB9AAF291D9241C30071D1F2 /* ViewController.swift */,
+				BB9AAF471D9245AA0071D1F2 /* Album.swift */,
+				BB9AAF491D9245F40071D1F2 /* AlbumDetailsViewController.swift */,
+				BB9AAF4B1D9246660071D1F2 /* BarcodeScannerViewController.swift */,
+				BB9AAF4D1D92469C0071D1F2 /* Constants.swift */,
+				BB9AAF4F1D92473E0071D1F2 /* DataService.swift */,
 				BB9AAF2B1D9241C50071D1F2 /* Main.storyboard */,
 				BB9AAF2E1D9241C60071D1F2 /* Assets.xcassets */,
 				BB9AAF301D9241C70071D1F2 /* LaunchScreen.storyboard */,
@@ -103,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB9AAF411D9241CB0071D1F2 /* Build configuration list for PBXNativeTarget "RecordScanner" */;
 			buildPhases = (
+				61A79D32C8E10504FF343B05 /* [CP] Check Pods Manifest.lock */,
 				BB9AAF201D9241C30071D1F2 /* Sources */,
 				BB9AAF211D9241C30071D1F2 /* Frameworks */,
 				BB9AAF221D9241C30071D1F2 /* Resources */,
+				37C6F708F811BE28BC81C61B /* [CP] Embed Pods Frameworks */,
+				AB6A53E10C4313C67F021FC9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,13 +233,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		37C6F708F811BE28BC81C61B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordScanner/Pods-RecordScanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A79D32C8E10504FF343B05 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AB6A53E10C4313C67F021FC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RecordScanner/Pods-RecordScanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB9AAF201D9241C30071D1F2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB9AAF2A1D9241C30071D1F2 /* ViewController.swift in Sources */,
+				BB9AAF4E1D92469C0071D1F2 /* Constants.swift in Sources */,
 				BB9AAF281D9241C30071D1F2 /* AppDelegate.swift in Sources */,
+				BB9AAF4A1D9245F40071D1F2 /* AlbumDetailsViewController.swift in Sources */,
+				BB9AAF501D92473E0071D1F2 /* DataService.swift in Sources */,
+				BB9AAF4C1D9246660071D1F2 /* BarcodeScannerViewController.swift in Sources */,
+				BB9AAF481D9245AB0071D1F2 /* Album.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +420,7 @@
 		};
 		BB9AAF421D9241CB0071D1F2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D4FD52868912FA3156394B2 /* Pods-RecordScanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RecordScanner/Info.plist;
@@ -340,6 +432,7 @@
 		};
 		BB9AAF431D9241CB0071D1F2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B67CBE70CEEB984A36ACA45D /* Pods-RecordScanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RecordScanner/Info.plist;
@@ -392,6 +485,7 @@
 				BB9AAF431D9241CB0071D1F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BB9AAF441D9241CB0071D1F2 /* Build configuration list for PBXNativeTarget "RecordScannerTests" */ = {
 			isa = XCConfigurationList;
@@ -400,6 +494,7 @@
 				BB9AAF461D9241CB0071D1F2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
